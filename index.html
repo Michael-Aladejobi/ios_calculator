@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>iOS Calculator</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh; /* Ensures the body takes up at least the full viewport height */
+                margin: 0;
+                background-color: rgba(0, 0, 0, 0.664);
+            }
+
+            .container {
+                width: 295px;
+                height: 70vh;
+                border: 2px solid white;
+                background: black;
+                border-radius: 50px;
+            }
+
+            .btn-container {
+                margin-top: 65%;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            button {
+                width: 55px;
+                height: 55px;
+                border-radius: 28px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: large;
+                margin-bottom: 10px;
+                margin-right: 5px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .number,
+            .dot {
+                background-color: rgba(102, 100, 100, 0.315);
+                color: white;
+            }
+            .operator {
+                background-color: orange;
+            }
+
+            .function {
+                background-color: rgb(163, 163, 163);
+            }
+            #zero {
+                width: 110px;
+                margin-right: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="btn-container">
+                <button class="function">AC</button>
+                <button class="function">+/-</button>
+                <button class="function">%</button>
+                <button class="operator">/</button>
+                <br />
+
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">x</button>
+                <br />
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">-</button>
+                <br />
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">+</button>
+                <br />
+                <button class="number" id="zero">0</button>
+                <button class="dot">.</button>
+                <button class="operator">=</button>
+            </div>
+        </div>
+    </body>
+</html>
